@@ -82,7 +82,7 @@ def get_locale() -> str:
 
 
 @babel.timezoneselector
-def get_timezone():
+def get_timezone() -> str:
     """
     Returns the timezone for the user of the application
     :return: str | None

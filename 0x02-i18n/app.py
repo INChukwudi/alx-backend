@@ -61,7 +61,7 @@ def hello_world():
 
 
 @babel.localeselector
-def get_locale():
+def get_locale() -> str:
     """
     Checks for the current locale according to this priority order
     - Locale from URL parameters
@@ -85,7 +85,7 @@ def get_locale():
 
 
 @babel.timezoneselector
-def get_timezone():
+def get_timezone() -> str:
     """
     Returns the timezone for the user of the application
     :return: str | None

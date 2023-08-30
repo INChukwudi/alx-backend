@@ -57,7 +57,7 @@ def hello_world():
 
 
 @babel.localeselector
-def get_locale():
+def get_locale() -> str:
     """
     Checks for the current locale
     :return: str
