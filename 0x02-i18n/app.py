@@ -25,7 +25,8 @@ users = {
 
 def get_user():
     """
-    Retrieves the user id from the query parameter and checks against the users' dictionary
+    Retrieves the user id from the query parameter
+    and checks against the users' dictionary
     :return: UserDetails : Dict | None : NoneObject
     """
     try:
@@ -42,7 +43,8 @@ def get_user():
 @app.before_request
 def before_request():
     """
-    Method runs before every request and gets the user passed in the query parameter
+    Method runs before every request
+    and gets the user passed in the query parameter
     :return: None
     """
     g.user = get_user()
